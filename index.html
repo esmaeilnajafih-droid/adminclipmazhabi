@@ -230,7 +230,7 @@
             animation: rainbowTextShift 6s ease-in-out infinite;
             letter-spacing: 4px;
             line-height: 1.2;
-            text-shadow: 0 0 100px rgba(255, 107, 107, 0.02);
+            text-shadow: 0 0 100px rgba(255, 107, 107, 0.05);
         }
 
         @keyframes rainbowTextShift {
@@ -241,9 +241,9 @@
         .header .subtitle {
             position: relative;
             z-index: 1;
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.25);
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.35);
             margin-top: 0.2rem;
             display: flex;
             align-items: center;
@@ -327,15 +327,16 @@
             background: transparent;
             border: none;
             outline: none;
-            color: #f0f3ff;
+            color: #ffffff;
             font-family: 'Vazirmatn', sans-serif;
-            font-size: 1rem;
+            font-size: 1.05rem;
+            font-weight: 400;
             padding: 0.9rem 1.2rem;
             direction: rtl;
         }
 
         .search-box input::placeholder {
-            color: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.12);
             font-weight: 300;
         }
 
@@ -376,15 +377,17 @@
         .search-stats {
             text-align: center;
             margin-top: 0.8rem;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.06);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.08);
             transition: all 0.4s ease;
             min-height: 1.5rem;
             letter-spacing: 1px;
+            font-weight: 400;
         }
 
         .search-stats.active {
             color: #feca57;
+            font-weight: 500;
         }
 
         /* ===== Movie Grid ===== */
@@ -565,10 +568,10 @@
         .card-header .title-watermark {
             position: relative;
             z-index: 1;
-            font-size: 1rem;
-            font-weight: 700;
-            color: rgba(255, 255, 255, 0.02);
-            letter-spacing: 2px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.06);
+            letter-spacing: 3px;
             text-align: center;
             line-height: 1.4;
         }
@@ -579,29 +582,29 @@
             top: 14px;
             right: 14px;
             z-index: 5;
-            background: linear-gradient(135deg, rgba(255, 107, 107, 0.7), rgba(254, 202, 87, 0.5));
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.85), rgba(254, 202, 87, 0.65));
             backdrop-filter: blur(12px);
-            padding: 0.2rem 1rem;
+            padding: 0.3rem 1.2rem;
             border-radius: 30px;
-            font-size: 0.6rem;
-            font-weight: 700;
+            font-size: 0.7rem;
+            font-weight: 800;
             color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.02);
-            box-shadow: 0 4px 30px rgba(255, 107, 107, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(255, 107, 107, 0.1);
             display: flex;
             align-items: center;
-            gap: 5px;
-            letter-spacing: 0.3px;
+            gap: 6px;
+            letter-spacing: 0.5px;
             animation: badgePulse 3s ease-in-out infinite;
         }
 
         @keyframes badgePulse {
-            0%, 100% { box-shadow: 0 4px 30px rgba(255, 107, 107, 0.05); }
-            50% { box-shadow: 0 4px 50px rgba(255, 107, 107, 0.1); }
+            0%, 100% { box-shadow: 0 4px 30px rgba(255, 107, 107, 0.1); }
+            50% { box-shadow: 0 4px 50px rgba(255, 107, 107, 0.2); }
         }
 
         .badge-animation i {
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             animation: sparkleRotate 2.5s ease-in-out infinite;
         }
 
@@ -623,16 +626,16 @@
             position: absolute;
             top: -20px;
             left: 18px;
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 900;
-            font-size: 0.85rem;
-            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.02);
+            font-size: 0.95rem;
+            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s ease;
         }
 
@@ -652,12 +655,13 @@
         }
 
         .movie-title {
-            font-size: 1.3rem;
-            font-weight: 700;
+            font-size: 1.4rem;
+            font-weight: 900;
             margin-top: 0.1rem;
             margin-bottom: 0.1rem;
-            color: #f0f3ff;
+            color: #ffffff;
             line-height: 1.3;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
         }
 
         .movie-title .highlight {
@@ -667,6 +671,8 @@
             background-clip: text;
             color: transparent;
             animation: highlightRainbow 4s ease-in-out infinite;
+            font-weight: 900;
+            text-shadow: 0 0 40px rgba(255, 107, 107, 0.1);
         }
 
         @keyframes highlightRainbow {
@@ -675,24 +681,25 @@
         }
 
         .movie-year {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.35);
             margin-bottom: 0.4rem;
             display: flex;
             align-items: center;
             gap: 6px;
+            font-weight: 500;
         }
 
         .movie-year i {
-            color: rgba(255, 255, 255, 0.03);
-            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 0.8rem;
         }
 
         .movie-desc {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.15);
-            font-weight: 300;
-            line-height: 1.6;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.35);
+            font-weight: 400;
+            line-height: 1.8;
             margin-bottom: 1rem;
             flex-grow: 1;
         }
@@ -702,22 +709,22 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #a29bfe);
             background-size: 300% 300%;
             color: #0a0a1a;
-            padding: 0.8rem 1.5rem;
+            padding: 0.9rem 1.5rem;
             border-radius: 60px;
-            font-weight: 700;
-            font-size: 0.9rem;
+            font-weight: 800;
+            font-size: 1rem;
             text-decoration: none;
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: none;
             cursor: pointer;
-            box-shadow: 0 8px 40px rgba(255, 107, 107, 0.04);
+            box-shadow: 0 8px 40px rgba(255, 107, 107, 0.08);
             width: 100%;
             text-align: center;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.5px;
             position: relative;
             overflow: hidden;
             animation: btnRainbow2 4s ease-in-out infinite;
@@ -753,19 +760,19 @@
         .btn-watch .btn-content {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             position: relative;
             z-index: 1;
         }
 
         .btn-watch i {
-            font-size: 1rem;
+            font-size: 1.1rem;
             transition: all 0.4s ease;
         }
 
         .btn-watch:hover {
             transform: scale(1.04) translateY(-3px);
-            box-shadow: 0 15px 60px rgba(255, 107, 107, 0.08);
+            box-shadow: 0 15px 60px rgba(255, 107, 107, 0.15);
         }
 
         .btn-watch:hover i {
@@ -920,7 +927,7 @@
             .search-box .search-btn { width: 100%; justify-content: center; padding: 0.9rem; }
             .search-box .search-icon { display: none; }
             .search-box:focus-within { transform: none; background: transparent; }
-            .movie-info .number-badge { width: 32px; height: 32px; font-size: 0.7rem; top: -16px; left: 14px; }
+            .movie-info .number-badge { width: 34px; height: 34px; font-size: 0.85rem; top: -17px; left: 14px; }
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
@@ -1370,7 +1377,7 @@
             } else {
                 searchStats.textContent = '۱۶ فیلم';
                 searchStats.classList.add('active');
-                searchStats.style.color = 'rgba(255,255,255,0.06)';
+                searchStats.style.color = 'rgba(255,255,255,0.08)';
             }
         }
 
